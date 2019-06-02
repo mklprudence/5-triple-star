@@ -1,0 +1,20 @@
+We shall step into the world of calculus from common sense.
+Now imagine that you are shooting a gun (in a world with unknown physical rules) in a field.
+When you shoot it at an angle of $30^\circ$, the bullet flied for a distance of 100m, and when the angle is increased to $40^\circ$, it flied for a distance of 120m.
+Now the question: if I change the angle to, say, $35^\circ$, can you estimate the distance for which the bullet might fly this time?\\
+You are guessing somewhere near 110m, am I right? But why? Why is everyone so keen on this approximation? Why don't you say 1200m? 240000m? 3m?
+Of course, this is somewhat like a common sense, but what can we see from such kind of intuition, when applied to the approximation to other functions?\\
+The ``common sense'' is both natural and unnatural. It relies on a simple observation, or shall we say, mind experiment. When you magnify a curve (in this case, the graph of the function
+$f(\theta)$ mapping the incident angle to the distance of the bullet) indefinitely, you will expect, at the end of the day, something that looks like a straight line
+\footnote{This, however, is not always true. Bear in mind that there are plenty of functions on which this does not apply. You will be asked to construct such a function in the exercises}.\\
+This is, as we call it, a \textit{linear approximation}. Why linear?
+Partly because it is close to our common sense, but more importantly, we know about linear functions in a much more extensive mannar than we know other functions.
+From preliminary knowledges, we know that we can represent a line on Cartesian coordinate by the simple general from
+$$y=mx+c$$
+Since we are only interested in the trend instead of the general position, the value of $c$ is sometimes less important.
+Then, for a function $f$, if we know its values $f(a), f(b)$ at $a,b$ respectively, we can reasonably approximate what in between by a line joining the two known points.
+Its slope, of course, is given by the equation
+$$m=\frac{f(b)-f(a)}{b-a}$$
+This is an approximation instead of the true pattern, but if $f$ is a nice enough\footnote{Differentiable. Will cover later}, then we can approximate $f$ arbitrarily close when $a,b$ are arbitrarily close.\\
+Geometrically, if everything goes well, then when $a,b$ are \textit{really close}, the resulting line will just \textit{touch} the function, i.e. a tangent.
+Just like the slope of a linear equation tells us the trend it will follow, this tangent gives us the trend of the function in a small region near $a$ and $b$. This can be characterized by a limit.
