@@ -2,9 +2,9 @@
 
 ## Introduction
 
-<p>5-triple-star is a repository project initiated by La Salle College Class 2019 students, as an effort to create a centralized and organised location for DSE learning and studying material. </p>
+<p><code>5-triple-star</code> is a repository project initiated by La Salle College Class of 2019 students, as an effort to create a centralized and organised location for DSE learning and studying material. </p>
 
-<p>Users of 5-triple-star material can refer to the structure layout in <a href="https://github.com/mklprudence/5-triple-star/blob/master/STRUCTURE.md">STRUCTURE.md</a> to find the files required. </p>
+<p>Users of <code>5-triple-star</code> material can refer to the structure layout in <a href="https://github.com/mklprudence/5-triple-star/blob/master/STRUCTURE.md">STRUCTURE.md</a> to find the files required. </p>
 
 <p>Contents in this repository can be utilized in various form, including but not limited to the following usage : </p>
 
@@ -15,11 +15,11 @@
 
 ## Issue Tracker
 
-<p>5-triple-star project does NOT guarantee that the study material is without any fault, even with extensive effort to make it so. It is reminded that all material under 5-triple-star project are provided "AS IS", and used with the acceptance of risk. </p>
+<p>The <code>5-triple-star</code> project does NOT guarantee that the study material are faultless, despite our extensive effort to make it so. Please be reminded that all material under <code>5-triple-star</code> project are provided "AS IS", and usage of its content shall indicate the acceptance of any risk involved. Users should also be acknowledged that the <code>5-triple-star</code> project, as well as its former and current contributors shall take no responsibility of any negative consequences caused by the material. </p>
 
-<p>It is encouraged that users of 5-triple-star material should report any fault in the material or missing content to the repository <a href="https://github.com/mklprudence/5-triple-star/issues">Issue Tracker</a>, in order to facilitate contributors' effort to maintain fault-free and high quality studying material. </p>
+<p>Users of <code>5-triple-star</code> material are encouraged to report any fault or missing content in the material to the repository <a href="https://github.com/mklprudence/5-triple-star/issues">Issue Tracker</a>, in order to facilitate contributors' effort to maintain high-quality studying material. </p>
 
-<p>It should be reminded that the principle of validity of content is derived from the past marking schemes of examinations by HKEAA, including but not limited to HKDSE, HKAL, and HKCEE, as well as common textbooks used by HKDSE candidates. </p>
+<p>N.B. The principle of validity of content is derived from the past marking schemes of examinations by HKEAA, including but not limited to HKDSE, HKAL, and HKCEE, as well as common textbooks used by HKDSE candidates. </p>
 
 ## Contributors
 <p>The following is a list of contributors of the 5-triple-star project. </p>
