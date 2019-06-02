@@ -38,3 +38,7 @@
         <td>BAI Zhiyuan</td>
     </tr>
 </table>
+
+## Join Us
+
+<p>Everyone who has a reasonable level of knowledge in any HKDSE subject and is willing to learn basic LaTeX is welcome to join the co-development of this project. If you wish to collaborate with us, please either contact an active collaborator or send an email to <code>fivetriplestar@gmail.com</code> with relevent contact information. </p>
