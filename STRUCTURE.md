@@ -3,10 +3,10 @@
 <p>All directories and files in this repository should be arranged in the following suggested format for consistency. Users should get familiarized with the structure listed below to find files easily. </p>
 
     homedir
-    |-- \[Subject\]
+    |-- [Subject]
         |-- Mock Paper
         |-- Notes
-            |-- \[Topic\]
+            |-- [Topic]
                 |-- main.tex
                 |-- Ss1
                 |   |-- Content.tex
