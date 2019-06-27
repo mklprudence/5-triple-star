@@ -1,10 +1,10 @@
 \NeedsTeXFormat{LaTeX2e}[1994/06/01]
-\ProvidesClass{fts_m2}[2019/06/02 v1.0 by fivetriplestar. DocumentClass for the 5-triple-star project -- M2.]
+\ProvidesClass{fts_m2}[2019/06/27 v1.0 (0001) by fivetriplestar. DocumentClass for the 5-triple-star project -- M2.]
 
 \LoadClass[a4paper]{article}
 
 \author{The \texttt{5-triple-star} Project}
-\date\today
+\date{Compiled on \today}
 
 \usepackage[english]{babel}
 \usepackage[utf8]{inputenc}

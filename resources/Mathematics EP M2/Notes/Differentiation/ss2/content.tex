@@ -4,5 +4,27 @@ Similarly, if we want to see the ultimate linear approximation of a function at 
 $$\lim_{b\to a}\frac{f(b)-f(a)}{b-a}$$
 or
 $$\lim_{h\to 0}\frac{f(a+h)-f(a)}{h}$$
-By the substitution $h=b-a$. Of course, this limit may or may not exist, but it does exist almost anywhere in almost all the functions you will encounter in daily life.
-For example, if $f$ is, actually, linear with slope $m$, one may verify that the expression in the first principle essentially gives $m$.
+By the substitution $h=b-a$. Of course, this limit may or may not exist, but it does exist almost anywhere in almost all the functions ordinary people
+\footnote{This excludes mathematicians, of course.}
+will ever encounter.
+If the limit exists for a function $f$ at point $a$, we say that $f$ is \textit{differentiable} at $a$.\\
+We certainly have the freedom to attempt evaluating the limit for some functions we like. For example, take $f(x)=x^2$,
+$$\lim_{h\to0}\frac{f(x+h)-f(x)}{h}=\lim_{h\to0}\frac{2xh+h^2}{h}=\lim_{h\to0}(2x+h)=2x$$
+So we say the function $g(x)=2x$ is the \textit{derivative} of $f(x)$. Derivative of $y=f(x)$ is often denoted by $f^\prime(x)$, $\dot{y}$ or $\frac{\mathrm dy}{\mathrm dx}$. These notations differ due to the rather complex history of the development of Calculus.\\
+Suppose $f(x)=mx+c$ for some constants $m$ and $c$, then one may verify that $f^\prime$ is exactly the constant function $m$. What this gives us is exactly what we expect to be the geometrical meaning of a derivative: the slope of the tangent of a (differentiable) curve!\\
+There is yet another intepretation of the derivative notion.
+If we want to directly conduct a linear approximation of the function near a point $x$, we are actually hoping to find a constant $m$ such that $f(x)$ \textit{behaves like} $mx+c$ for some onstant $c$.
+In other words, we want
+$$f(x+h)=f(x)+mh+o(h)$$
+for some small $h$.
+What is $o(h)$? It is what we call an \textit{error term}.
+Since we can only \textit{approximate} the function by a linear tangent, there should normally be some difference between this linear function and the original function.
+\footnote{N.B. $o(h)$ depends on $h$. Also, for computer scientists, this $o(h)$ is exactly the little-$o$ notation that you use when bounding time complexities}
+This difference is the error term that allows us to use $=$ instead of $\approx$.\\
+But there should be a restriction on the magnitude of $o(h)$, or $m$ could just be any real number.
+Now, since we want the function to resemble that linear function as close as we please when $h$ is small enough, we will want $o(h)$ to go to $0$ faster than $h$ does.
+In the language of limit, this means that
+$$\lim_{h\to0}\frac{o(h)}{h}=0$$
+So, if we rearrange the equation, we will find that
+$$\frac{f(x+h)-f(x)}{h}=m+\frac{o(h)}{h}\to m\text{ as }h\to0$$
+This gives, again, the first principle. One may check that the existence of such an $m$ is equivalent to the differentiability of $f$ at point $x$.
