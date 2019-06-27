@@ -27,6 +27,8 @@
                 |-- ss2/
                 ...
 
+<p>NB Please do NOT name the illustration files as <code>main.pdf</code>, since that is agreed to be the name for the temporary builds of the documents and will be ignored by git due to our current <code>.gitignore</code> settings. Also, try not to add any binary files that are subject to changes (since they will be stored in the repository forever).</p>
+
 ## Git Workflow
 
 ### Setup
