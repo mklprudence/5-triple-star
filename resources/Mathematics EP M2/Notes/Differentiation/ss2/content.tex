@@ -7,24 +7,31 @@ $$\lim_{h\to 0}\frac{f(a+h)-f(a)}{h}$$
 By the substitution $h=b-a$. Of course, this limit may or may not exist, but it does exist almost anywhere in almost all the functions ordinary people
 \footnote{This excludes mathematicians, of course.}
 will ever encounter.
-If the limit exists for a function $f$ at point $a$, we say that $f$ is \textit{differentiable} at $a$.\\
-We certainly have the freedom to attempt evaluating the limit for some functions we like. For example, take $f(x)=x^2$,
-$$\lim_{h\to0}\frac{f(x+h)-f(x)}{h}=\lim_{h\to0}\frac{2xh+h^2}{h}=\lim_{h\to0}(2x+h)=2x$$
-So we say the function $g(x)=2x$ is the \textit{derivative} of $f(x)$. Derivative of $y=f(x)$ is often denoted by $f^\prime(x)$, $\dot{y}$ or $\frac{\mathrm dy}{\mathrm dx}$. These notations differ due to the rather complex history of the development of Calculus.\\
-Suppose $f(x)=mx+c$ for some constants $m$ and $c$, then one may verify that $f^\prime$ is exactly the constant function $m$. What this gives us is exactly what we expect to be the geometrical meaning of a derivative: the slope of the tangent of a (differentiable) curve!\\
-There is yet another intepretation of the derivative notion.
-If we want to directly conduct a linear approximation of the function near a point $x$, we are actually hoping to find a constant $m$ such that $f(x)$ \textit{behaves like} $mx+c$ for some onstant $c$.
-In other words, we want
-$$f(x+h)=f(x)+mh+o(h)$$
-for some small $h$.
-What is $o(h)$? It is what we call an \textit{error term}.
-Since we can only \textit{approximate} the function by a linear tangent, there should normally be some difference between this linear function and the original function.
-\footnote{N.B. $o(h)$ depends on $h$. Also, for computer scientists, this $o(h)$ is exactly the little-$o$ notation that you use when bounding time complexities}
-This difference is the error term that allows us to use $=$ instead of $\approx$.\\
-But there should be a restriction on the magnitude of $o(h)$, or $m$ could just be any real number.
-Now, since we want the function to resemble that linear function as close as we please when $h$ is small enough, we will want $o(h)$ to go to $0$ faster than $h$ does.
-In the language of limit, this means that
-$$\lim_{h\to0}\frac{o(h)}{h}=0$$
-So, if we rearrange the equation, we will find that
-$$\frac{f(x+h)-f(x)}{h}=m+\frac{o(h)}{h}\to m\text{ as }h\to0$$
-This gives, again, the first principle. One may check that the existence of such an $m$ is equivalent to the differentiability of $f$ at point $x$.
+\begin{definition}
+    If the above limit exists, we say that $f$ is \textit{differentiable} at $a$.
+    If $f$ is differentiable in a subset $S$ of the domain, the function $f^\prime:S\to\mathbb R$ defined by 
+    $$f^\prime(a)=\lim_{h\to 0}\frac{f(a+h)-f(a)}{h}$$
+    is called the \textit{derivative} of $f$.
+\end{definition}
+\begin{remark}
+    The author prefer to denote the derivative of $y=f(x)$ as $f^\prime(x)$, but there is often other notations like $\dot{y}$ or $\frac{\mathrm dy}{\mathrm dx}$.
+    The difference of notations results from the rather complex history of the development of Calculus.
+\end{remark}
+We certainly have the freedom to attempt evaluating the limit for some functions we like, and it is highly encouraged that you attempt evaluating this limit for some of your favourite functions.
+\begin{example}
+    We take $f(x)=x^2$, so
+    $$\lim_{h\to0}\frac{f(x+h)-f(x)}{h}=\lim_{h\to0}\frac{2xh+h^2}{h}=\lim_{h\to0}(2x+h)=2x$$
+    Therefore,
+    $$f^\prime(x)=\lim_{h\to0}\frac{f(x+h)-f(x)}{h}=2x$$
+\end{example}
+\begin{remark}
+    When attempting evaluating a derivative, it is better NOT to write, in the beginning, something like
+    $$f^\prime(x)=\lim_{h\to0}\frac{f(x+h)-f(x)}{h}=\cdots$$
+    because we DO NOT YET know if the limit really exists. So one should attempt evaluating the limit first before concluding the derivative of the function.
+\end{remark}
+\begin{example}
+    We can also find the derivative of a function at some specific point. Take the function $f(x)=\exp(x)=e^x$, if we want to find its derivative at $x=0$, we do
+    $$\lim_{h\to0}\frac{e^{0+h}-e^0}{h}=\lim_{h\to0}\frac{e^h-1}{h}=1$$
+    So $f^\prime(0)=1$.
+\end{example}
+Suppose $f(x)=mx+c$ for some constants $m$ and $c$, then one may verify that $f^\prime$ is exactly the constant function $m$. What this gives us is exactly what we expect to be the geometrical meaning of a derivative: the slope of the tangent of a (differentiable) curve!

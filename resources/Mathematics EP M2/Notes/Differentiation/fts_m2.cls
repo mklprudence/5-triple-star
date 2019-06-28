@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}[1994/06/01]
-\ProvidesClass{fts_m2}[2019/06/27 v1.0 (0001) by fivetriplestar. DocumentClass for the 5-triple-star project -- M2.]
+\ProvidesClass{fts_m2}[2019/06/27 v1.0 (0002) by fivetriplestar. DocumentClass for the 5-triple-star project -- M2.]
 
 \LoadClass[a4paper]{article}
 
@@ -14,7 +14,15 @@
 \RequirePackage{amsmath}
 
 \RequirePackage{amsthm}
-\newtheorem{claim}{Claim}[section]
-\newtheorem{lemma}{Lemma}[section]
+\theoremstyle{plain}
+\newtheorem{example}{Example}[section]
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
 
 \pagestyle{fancy}
