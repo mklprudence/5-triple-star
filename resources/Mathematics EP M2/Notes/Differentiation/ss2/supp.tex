@@ -6,8 +6,8 @@ for some small $h$.
 What is $o(h)$? It is what we call an \textit{error term}.
 Since we can only \textit{approximate} the function by a linear tangent, there should normally be some difference between this linear function and the original function.
 \footnote{N.B. $o(h)$ depends on $h$. Also, for computer scientists, this $o(h)$ is exactly the little-$o$ notation that you use when bounding time complexities}
-This difference is the error term that allows us to use $=$ instead of $\approx$.\\
-But there should be a restriction on the magnitude of $o(h)$, or $m$ could just be any real number.
+We express this difference as $o(h)$.
+But there should be restrictions on the magnitude of $o(h)$ to produce a nice approximation, or $m$ could just be any real number.
 Now, since we want the function to resemble that linear function as close as we please when $h$ is small enough, we will want $o(h)$ to go to $0$ faster than $h$ does.
 In the language of limit, this means that
 $$\lim_{h\to0}\frac{o(h)}{h}=0$$

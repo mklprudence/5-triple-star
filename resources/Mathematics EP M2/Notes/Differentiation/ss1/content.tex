@@ -10,11 +10,16 @@ $f(\theta)$ mapping the incident angle to the distance of the bullet) indefinite
 This is, as we call it, a \textit{linear approximation}. Why linear?
 Partly because it is close to our common sense, but more importantly, we know about linear functions in a much more extensive mannar than we know other functions.
 From preliminary knowledges, we know that we can represent a line on Cartesian coordinate by the simple general from
-$$y=mx+c$$
+$$y=mx+c$$.
 Since we are only interested in the trend instead of the general position, the value of $c$ is sometimes less important.
-Then, for a function $f$, if we know its values $f(a), f(b)$ at $a,b$ respectively, we can reasonably approximate what in between by a line joining the two known points.
+Then, for a function $f$, if we know its values $f(a), f(b)$ at $a,b$ respectively, we can reasonably approximate what in between them by a line joining the two known points.
 Its slope, of course, is given by the equation
 $$m=\frac{f(b)-f(a)}{b-a}$$
-This is an approximation instead of the true pattern, but if $f$ is a nice enough\footnote{Differentiable. Will cover later}, then we can approximate $f$ arbitrarily close when $a,b$ are arbitrarily close.\\
-Geometrically, if everything goes well, then when $a,b$ are \textit{really close}, the resulting line will just \textit{touch} the function, i.e. a tangent.
-Just like the slope of a linear equation tells us the trend it will follow, this tangent gives us the trend of the function in a small region near $a$ and $b$. This can be characterized by a limit.
+This is an approximation instead of the true pattern, but if $f$ is a nice enough
+\footnote{Differentiable. Will cover later}
+function, then we can approximate $f$ arbitrarily close when $a,b$ are arbitrarily close.\\
+Geometrically, with the above assumption, then when $a,b$ are \textit{really close}, the resulting line will just \textit{touch} the function,
+i.e. it will become a tangent.
+Just like the slope of a linear equation tells us its steepness, this tangent gives us the trend of the function in a small region near $a$ and $b$.
+How can we, in fact, make $a$ and $b$ ``really close''?
+Of course, we have this wonderful tool called limit.
