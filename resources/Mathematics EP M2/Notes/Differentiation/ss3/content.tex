@@ -1,5 +1,7 @@
 From this section on, we are going to introduce some rules that we can use to differentiate a function more easily.
-The first thing that we will look at is the sums, products and quotients (or fractions).
+\footnote{Author of some Calculus testbook prefer the wording: ``Construct more differentiable functions from existing ones''.}
+We already know that we can take a multiplicative constant out of the differentiation sign from an exercise in the preceding session, but we can actually do something even more useful.
+The first things that we will look at in the forcoming sections will be the derivatives of the sums, products and quotients (or fractions) of differentiable functions.
 Now, suppose $f$ and $g$ are differentiable, then
 \begin{align*}
     &\lim_{h\to0}\frac{f(x+h)+g(x+h)-(f(x)+g(x))}{h}\\
@@ -8,3 +10,36 @@ Now, suppose $f$ and $g$ are differentiable, then
     =&f^\prime(x)+g^\prime(x)
 \end{align*}
 Therefore, the function $f+g$ is differentiable as well, and its derivative is $f^\prime+g^\prime$.
+\begin{example}
+    Let $f(x)=x^2+3x$. We have already knwon how to differentiate $x^2$ and $3x$ alone respectively from the preceding section, so by what we have already got,
+    $$f^\prime(x)=(2x)+(3)=2x+3$$
+\end{example}
+We can do the same thing for products, of course. We of course start with our beloved first principle:
+\begin{align*}
+    &\lim_{h\to0}\frac{f(x+h)g(x+h)-f(x)g(x)}{h}\\
+    =&\lim_{h\to0}f(x+h)\frac{g(x+h)-g(x)}{h}+\frac{f(x+h)-f(x)}{h}g(x)\\
+    =&\lim_{h\to0}f(x+h)\lim_{h\to0}\frac{g(x+h)-g(x)}{h}+\lim_{h\to0}\frac{f(x+h)-f(x)}{h}\lim_{h\to0}g(x)\\
+    =&f(x)g^\prime(x)+f^\prime(x)g(x)
+\end{align*}
+So $f\cdot g$ is differentiable and its derivative is $f\cdot g^\prime+f^\prime\cdot g$.
+\begin{example}
+    We now try to attempt to differentiate $f(x)=x^2e^x$. We know the derivatives of $x^2$ and $e^x$ are $2x$ and $e^x$ respectively, so
+    $$f^\prime(x)=(2x)e^x+x^2(e^x)=2xe^x+x^2e^x$$
+\end{example}
+After sums and products, we arrive as quotients (fractions), which, however, is not as neat as the sum and product case.
+There are essentially many ways of getting the quotient rule.
+The simpliest of which is to think of $f/g$ as $f\cdot 1/g$ and use the product rule to proceed.
+However, we have not covered the ways to differentiate the reciprocal of a function
+\footnote{You may consult the session about the chain rule later.}
+yet.
+So we will exhibit the first principle solution here.
+\begin{align*}
+    &\lim_{h\to0}\frac{\frac{f(x+h)}{g(x+h)}-\frac{f(x)}{g(x)}}{h}\\
+    =&\lim_{h\to0}\frac{1}{g(x+h)g(x)}\frac{f(x+h)g(x)-f(x)g(x+h)}{h}\\
+    =&\lim_{h\to0}\frac{1}{g(x+h)g(x)}
+    \left(\frac{f(x+h)-f(x)}{h}g(x)-f(x)\frac{g(x+h)-g(x)}{h}\right)\\
+    =&\frac{\lim_{h\to0}\frac{f(x+h)-f(x)}{h}g(x)-f(x)\lim_{h\to0}\frac{g(x+h)-g(x)}{h}}{\lim_{h\to0}g(x+h)g(x)}\\
+    =&\frac{f^\prime(x)g(x)-f(x)g^\prime(x)}{g(x)^2}
+\end{align*}
+The quotient rule might not be as easy as the two preceding rules for memorization, but it is still essential.
+Just remember the square in the denominator, minus sign in the nominator and the fact that $f^\prime$ goes before $g^\prime$.
