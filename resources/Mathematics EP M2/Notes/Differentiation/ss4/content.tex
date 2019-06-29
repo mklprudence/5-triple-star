@@ -1,0 +1,25 @@
+The most beloved family of functions for an algebraist is polynomials.
+It is quite right to say that polynomials are indeed the most important set of functions mathematicians study throughout the history of mathematics.
+So it seems only sensible that we would want to study their properties by every tool that we het in hand.
+In this case, that tool would be differentiation.\\
+From the exercise from the previous section, you should have known that
+$$\frac{\mathrm d}{\mathrm dx}x^n=nx^{n-1}$$
+for any positive integer $n$, by using induction.
+There is another proof which is somewhat neater than that.
+\begin{proof}
+    First principle always does the trick.
+    \begin{align*}
+        &\lim_{h\to0}\frac{(x+h)^n-x^n}{h}\\
+        =&\lim_{h\to0}\frac{1}{h}\sum_{m=1}^n\binom{n}{m}x^{n-m}h^m\\
+        =&\lim_{h\to0}\sum_{m=1}^n\binom{n}{m}x^{n-m}h^{m-1}\\
+        =&\binom{n}{1}x^{n-1}=nx^{n-1}
+    \end{align*}
+    As desired.
+\end{proof}
+Our existing knowledge about evaluating the derivative of sums then tells us that
+\begin{theorem}
+    $$\frac{\mathrm d}{\mathrm dx}\left(a_0+\sum_{i=1}^{n}a_ix^i\right)=\sum_{i=1}^{n}ia_ix^{i-1}$$
+\end{theorem}
+\begin{corollary}
+    A non-constant polynomial's degree decreases by $1$ upon differentiation.
+\end{corollary}
