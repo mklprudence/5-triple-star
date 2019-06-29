@@ -1,0 +1,25 @@
+The product rule is sometimes called \textit{Leibniz' Rule}, named after Gottfried Wilhelm Leibniz, one of the inventors of Calculus.
+One of the reasons for it to have such a polished name is that, other than the usual way of multiplication, it can also be applied to other sort of multiplications.\\
+Let $\langle x,y\rangle$ be a function which maps each pair of elements of a normed real vector space $V$ to another normed real vector space $W$.
+\footnote{We assumed that the addition and scalar multiplication are already continuous under the respective induced topology of $V$ and $W$.}
+If it has the following properties:\\
+(1) Bilinearity. I.e. $\langle ax+bz,y\rangle=a\langle x,y\rangle+b\langle z,y\rangle$ and $\langle x,ay+bz\rangle=a\langle x,y\rangle+b\langle x,z\rangle$ for any $a,b\in\mathbb R$ and $x,y,z\in V$.\\
+(2) Continuity under the induced topology (by their norms).\\
+Then, for two differentiable functions $f,g:\mathbb R\to V$,
+\footnote{the domain of $f$ can actually be extended to any normed real vector space as well, but that is far far beyond our scope}
+then
+$$\frac{\mathrm d}{\mathrm dx}\langle f(x),g(x)\rangle=\langle f(x),g^\prime (x)\rangle+\langle f^\prime(x),g(x)\rangle$$
+Note that the commutative law, i.e. $\langle a,b\rangle=\langle b,a\rangle$, needs NOT hold in this case.
+\begin{proof}
+    We can only give a somewhat vague proof here, since we have not rigorously covered the notion of continuity and limit in (normed) real vector spaces.\\
+    But vaguely speaking, if $f$ is a differentiable function from the set of real numbers to a (normed) real vector space, then 
+    $$f^\prime(x)=\lim_{h\to 0}\frac{f(x+h)-f(x)}{h}$$
+    So we have
+    \begin{align*}
+        &\lim_{h\to0}\frac{\langle f(x+h),g(x+h)\rangle-\langle f(x), g(x)\rangle}{h}\\
+        =&\lim_{h\to0}\left\langle f(x+h),\frac{g(x+h)-g(x)}{h}\right\rangle+\lim_{h\to0}\left\langle\frac{f(x+h)-f(x)}{h},g(x)\right\rangle\tag{Bilinearity}\\
+        =&\left\langle \lim_{h\to0}f(x+h),\lim_{h\to0}\frac{g(x+h)-g(x)}{h}\right\rangle+\left\langle\lim_{h\to0}\frac{f(x+h)-f(x)}{h},g(x)\right\rangle\tag{Continuity}\\
+        =&\langle f(x),g^\prime (x)\rangle+\langle f^\prime(x),g(x)\rangle
+    \end{align*}
+    As desired.
+\end{proof}
