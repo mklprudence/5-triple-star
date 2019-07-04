@@ -1,0 +1,25 @@
+The derivative of polynomials is not merely a tool we used to analysie the groowth of polynomial functions, but also their algebraic properties.\\
+For example,
+\begin{definition}
+    Let $r$ be a real number and $P(x)$ a nonconstant polynomial.\\
+    If $r$ is a root of $P(x)$, then it is said to be with multiplicity $m$ if and only if
+    $$P(x)=(x-r)^mQ(x)$$
+    where $Q(r)\neq 0$ (that is, $r$ is not a root of $Q$).\\
+    Otherwise, we define the multiplicity of $r$ in $P$ to be $0$. 
+\end{definition}
+\begin{remark}
+    It is obvious that the multiplicity is well-defined. It is, indeed, the minimal $m$ such that $(x-r)^m$ divides $P$.
+\end{remark}
+\begin{theorem}
+    Let $P(x)$ be a nonconstant polynomial and $r$ a root of it with multiplicity $n$. Then the multiplicity of $r$ in $P^\prime(x)$ is $n-1$.
+\end{theorem}
+\begin{proof}
+    Suppose that $P(x)=(x-r)^nQ(x)$, then
+    \begin{align*}
+        P^\prime(x)=&n(x-r)^{n-1}Q(x)+(x-r)^nQ^\prime(x)\\
+        =&(x-r)^{n-1}(nQ(x)+(x-r)Q^\prime(x))
+    \end{align*}
+    Now, since $Q(r)\neq 0$, $r$ is not a root of $nQ(x)+(x-r)Q^\prime(x)$ (simply plug it in). This means that $r$ has multiplicity $n-1$ in $P^\prime(x)$.
+\end{proof}
+There are many other interesting algebraic or even number theorectical results relevant to the derivative of a polynomial.
+The Hensel's lemma, for example, might be one of the most fundamental results in building the $p$-adic number theory.
