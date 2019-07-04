@@ -1,7 +1,7 @@
 From this section on, we are going to introduce some rules that we can use to differentiate a function more easily.
 \footnote{Author of some Calculus testbook prefer the wording: ``Construct more differentiable functions from existing ones''.}
-We already know that we can take a multiplicative constant out of the differentiation sign from an exercise in the preceding session, but we can actually do something even more useful.
-The first things that we will look at in the forcoming sections will be the derivatives of the sums, products and quotients (or fractions) of differentiable functions.
+We already know that we can take a multiplicative constant out of the differentiation sign from an exercise in the preceding section, but we can actually do something even more useful.\\
+The first things that we will look at will be the derivatives of the sums, products and quotients (or fractions) of differentiable functions.\\
 Now, suppose $f$ and $g$ are differentiable, then
 \begin{align*}
     &\lim_{h\to0}\frac{f(x+h)+g(x+h)-(f(x)+g(x))}{h}\\
@@ -26,13 +26,15 @@ So $f\cdot g$ is differentiable and its derivative is $f\cdot g^\prime+f^\prime\
     We now try to attempt to differentiate $f(x)=x^2e^x$. We know the derivatives of $x^2$ and $e^x$ are $2x$ and $e^x$ respectively, so
     $$f^\prime(x)=(2x)e^x+x^2(e^x)=2xe^x+x^2e^x$$
 \end{example}
-After sums and products, we arrive as quotients (fractions), which, however, is not as neat as the sum and product case.
+After sums and products, we arrive at quotients (i.e. fractions).
+However, in this case, the resulting rule is not as neat as the sum and product case.
 There are essentially many ways of getting the quotient rule.
 The simpliest of which is to think of $f/g$ as $f\cdot 1/g$ and use the product rule to proceed.
 However, we have not covered the ways to differentiate the reciprocal of a function
-\footnote{You may consult the session about the chain rule later, or it is also possible to deduce it from first principle.}
+\footnote{You may consult the session about the chain rule later. It is, however, also possible to deduce it from first principle.}
 yet.
-So we will exhibit the solution directly from first principle here.
+Another nice way to do it is to use implicit differentiation, which you will find in a later section.
+Here, we shall demonstrate the rule directly from first principle here.
 \begin{align*}
     &\lim_{h\to0}\frac{\frac{f(x+h)}{g(x+h)}-\frac{f(x)}{g(x)}}{h}\\
     =&\lim_{h\to0}\frac{1}{g(x+h)g(x)}\frac{f(x+h)g(x)-f(x)g(x+h)}{h}\\
@@ -42,5 +44,11 @@ So we will exhibit the solution directly from first principle here.
     =&\frac{f^\prime(x)g(x)-f(x)g^\prime(x)}{g(x)^2}
 \end{align*}
 The quotient rule might not be as easy as the two preceding rules for memorization, but it is still essential.
-Just remember the square in the denominator, minus sign in the nominator and the fact that $f^\prime$ goes before $g^\prime$.\\
-These three rules will be the most frequently used rules of differentiation especially in examinations. So please do get yourself familiar with these before proceeding to the next sections.
+Just bear in mind the square in the denominator, minus sign in the nominator and the fact that $f^\prime$ goes before $g^\prime$.
+\begin{theorem}
+    Let $f$ and $g$ be differentiable functions,\\
+    1. $(f+g)^\prime=f^\prime+g^\prime$\\
+    2. $(fg)^\prime=f^\prime g+fg^\prime$\\
+    3. $(f/g)^\prime=(f^\prime g-fg^\prime)/(g^2)$
+\end{theorem}
+These three rules will be used quite frequently, especially in practical problems and examinations. So please do get yourself familiar with these before proceeding to the next sections.
