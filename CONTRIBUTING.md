@@ -4,9 +4,10 @@
 
 <p>All directories and files in this repository should be arranged in the following suggested format for consistency. Users should get familiarized with the structure listed below to find files easily. </p>
 
-    homedir/
+    resources/
     |-- [Subject]/
         |-- Mock Paper/
+            |-- README.md (record progress)
             |-- mock1/
                 |-- main.tex
                 |-- illustration/ (Optional)
@@ -15,8 +16,13 @@
             |-- mock2/
             ...
         |-- Notes/
+            |-- README.md (record progress)
             |-- [Topic]/
                 |-- main.tex
+                |-- fts_[Subject].cls
+                |-- ss0/ (Front matter. Optional)
+                    |-- intro.tex
+                    ...
                 |-- ss1/
                     |-- content.tex
                     |-- exercise.tex (Optional)
