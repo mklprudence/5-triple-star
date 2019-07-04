@@ -13,6 +13,23 @@
 
 <p>Contents in this repository are protected by MIT License. Contents are not to be redistributed commercially without the consent of contributors.
 
+## How to get the material
+
+<p>Normally, if a set of notes has been completed, we will upload a compiled (<code>pdf</code>) version for download.</p>
+
+<p>If you want the most updated (which might or might not have been released) version of the notes of mock papers in the <code>5-triple-star</code> project, please follow these instructions depends on your situation.</p>
+
+<p>First, download the directory which sets of material you will need. For example, if you need the differentiation set of notes in the M2 syllabus, it shall be <code>5-triple-star/resources/Mathematics EP M2/Notes/Differentiation</code>. This can be done in several ways.</p>
+
+- Clone (or download) the entire repository and navigate to the respective directory
+- Download all files and folders in that directory
+
+<p>If you have any TeX distribution installed in your computer, just compile the <code>main.pdf</code>.</p>
+
+<p>Otherwise, you can go to <a href=https://www.overleaf.com/>ShareLaTeX/Overleaf</a>, upload the files and use the online compilation feature there.</p>
+
+<p>If you encounter any problems regarding compilation, <a href="https://github.com/mklprudence/5-triple-star/issues">open an issue</a>.</p>
+
 ## Issue Tracker
 
 <p>The <code>5-triple-star</code> project does NOT guarantee that the study material are faultless, despite our extensive effort to make it so. Please be reminded that all material under <code>5-triple-star</code> project are provided "AS IS", and usage of its content shall indicate the acceptance of any risk involved. Users should also be acknowledged that the <code>5-triple-star</code> project, as well as its former and current contributors shall take no responsibility of any negative consequences caused by the material. </p>
