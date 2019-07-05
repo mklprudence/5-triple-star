@@ -1,0 +1,13 @@
+We already know that the derivative of the exponential function is itself.
+That is
+$$\frac{\mathrm de^x}{\mathrm dx}=e^x$$
+It is natual for us to enquire the case for the opposite: the logarithm.\\
+There is nothing very polished here, just the usual first principle.
+\begin{align*}
+    \lim_{h\to0}\frac{\ln(x+h)-\ln(x)}{h}
+    =&\lim_{h\to0}\ln\left(\left(1+\frac{1}{x}h\right)^{1/h}\right)\\
+    =&\ln\left(\lim_{h\to0}\left(1+\frac{1}{x}h\right)^{1/h}\right)\\
+    =&\ln(e^{1/x})\\
+    =&\frac{1}{x}
+\end{align*}
+Therefore the logarithm function is differentiable and its derivative is $1/x$.
