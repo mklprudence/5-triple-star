@@ -10,4 +10,29 @@ There is nothing very polished here, just the usual first principle.
     =&\ln(e^{1/x})\\
     =&\frac{1}{x}
 \end{align*}
-Therefore the logarithm function is differentiable and its derivative is $1/x$.
+Therefore the logarithm function is differentiable and its derivative is $1/x$.\\
+Using the logarithmatic function, we could finally give a more genuine definition of irrational powers (or, in general, real powers).
+Observe first that if $r$ is any rational number then
+$$x^r=e^{r\ln{x}}$$
+What is the advantage of formulating it like this?
+Well, one may notice that $r$ is now the coefficient of $\ln{x}$ on the exponent, so the expression makes sense if we substitute $r$ by simply any real number.
+The core reason why this can happen is because we have defined the exponentiation of the natural base in a way general enough to include all real numbers.
+So what we have tried to do is to let the exponentiation of any real number inherit this nice property of our beloved $e$.\\
+Of course, an expression that makes sense (well-defined) cannot let us to accept it as a notion.
+There are more important properties to be checked.
+One may attempt oneself that if we define a real power by the mannar
+$$x^y=e^{y\ln{x}}$$
+then the set of rules of exponentiation hold still.
+A more important property stated at the end of the last section can also be checked.
+For any sequence $\mathfrac r_n$ converging to a real number $\mathfrac I$, then the continuity of $e^x$ and the multiplication operation guarantee that
+$$\lim_{n\to\infty}x^{\mathfrak r_n}=\lim_{n\to\infty}e^{\mathfrak r_n\ln{x}}=e^{\ln{x}\lim_{n\to\infty}\mathfrak r_n}=e^{\mathfrak I\ln{x}}=x^{\mathfrak I}$$
+So this way of defining the general power gives it properties that perfectly resemble what we expect it to have.\\
+Now, how about its derivative?
+\begin{theorem}
+    Let $y$ be any real number, we have
+    $$\frac{\mathrm dx^y}{\mathrm dx}=yx^{y-1}$$
+\end{theorem}
+\begin{proof}
+    The chain rule works.
+    $$\frac{\mathrm dx^y}{\mathrm dx}=e^{y\lnx}\frac{y}{x}=yx^{y-1}$$
+\end{proof}

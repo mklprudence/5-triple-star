@@ -1,0 +1,23 @@
+We now know how to differentiate any real powers, and they all have the same form.
+An interesting question, then, is if we can extend our journey to the field of complex numbers, $\mathbb C$.\\
+The answer, however, is not promising.
+We can't.
+Why?
+Well, firstly the logarithmatic function might not be in a form which you will like it.
+Euler's theorem tells us that
+$$z=|z|e^{i\arg{z}}$$
+So in order to let the logarithmatic function makes sence, we must have
+$$\ln{z}=\ln|z|+i\arg{z}$$
+Can't see any problem here?
+Take a look at the latter part of the expression: $\arg{z}$.
+$\arg{z}$ is defined in a way that it only spans over a range of $2\pi$, otherwise it will be ill-defined.
+But it simply does not work. Choose two complex numbers $z,w$ such that the sum of their arguments is not in your chosen interval of length $2\pi$.
+We can obviouly choose them no matter which interval we chose for the $\arg$ function.
+But then
+$$\ln|w|+\ln|z|+i(\arg{w}+\arg{z})=\ln{w}+\ln{z}=\ln{wz}=\ln|w|+\ln|z|+i\arg{wz}$$
+But this is false: $\arg{w}+\arg{z}$ is simply not in the image of $\arg$!
+So we cannot let the logarithmatic function have the same crucial properties that we will expect them to inherit from the real number case.
+A way this goes ill-defined is the evaluation of $i^i$.\\
+But is there a way to well-define these powers?
+The original way does not work, but is there any other way that works?
+In fact, there is no way that well-defines complex exponentiation in the way we wish, which you may want to find out why yourself.
