@@ -1,6 +1,8 @@
 # Mathematics Extended Part Module 2 - Notes
 
 ## Currently Under-construction
-- Differentiation (@fivetriplestar)
+- Limits (```Limits```) (UNASSIGNED)
+- Differentiation (```/Differentiation/```) (@fivetriplestar)
+- Application of Calculus (```/Application/```) (UNASSIGNED)
 
 ## Currently Finished/Drafted
