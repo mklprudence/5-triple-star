@@ -1,5 +1,15 @@
+\newif\ifcompilesupp
+\compilesupptrue
+% comment the above line if you don't want the supplementary information subsections
+
 \documentclass{fts_m2}
+
+\ifcompilesupp
 \title{Differentiation}
+\else
+\title{Differentiation (no-supp)}
+\fi
+
 \begin{document}
     \maketitle
     \section*{Introduction}
@@ -15,30 +25,45 @@
     \input{ss2/content.tex}
     \subsection*{Exercises}
     \input{ss2/exercise.tex}
+    \ifcompilesupp
     \subsection*{Supplementary Information}
     \input{ss2/supp.tex}
+    \fi
 
     \section{Differentiating Sums, Products and Quotients}
     \input{ss3/content.tex}
     \subsection*{Exercises}
     \input{ss3/exercise.tex}
+    \ifcompilesupp
     \subsection*{Supplementary Information}
     \input{ss3/supp.tex}
+    \fi
 
     \section{Derivatives of Integral Powers}
     \input{ss4/content.tex}
+    \ifcompilesupp
     \subsection*{Supplementary Information}
     \input{ss4/supp.tex}
+    \fi
 
     \section{The Chain Rule and Derivative of Rational Powers}
     \input{ss5/content.tex}
 
     \section{Derivatives of Logarithm and Irrational Powers}
     \input{ss6/content.tex}
+    \ifcompilesupp
     \subsection*{Supplementary Information}
     \input{ss6/supp.tex}
+    \fi
+    
+    \section{Derivatives of trigonometric functions}
+    \input{ss7/content.tex}
+    \ifcompilesupp
+    \subsection*{Exercises}
+    \input{ss7/exercise.tex}
+    \fi
     
     %TODO
-    %\section{Derivatives of trigonometric functions}
     %\section{Implicit Differentiation}
+    %\section{Higher derivatives}
 \end{document}
