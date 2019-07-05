@@ -6,12 +6,12 @@
 
 <p>Users of <code>5-triple-star</code> material can refer to the structure layout in <a href="https://github.com/mklprudence/5-triple-star/blob/master/STRUCTURE.md">STRUCTURE.md</a> to find the files required. </p>
 
-<p>Contents in this repository can be utilized in various form, including but not limited to the following usage : </p>
+<p>Contents in this repository can be utilized in various form, including but not limited to the following : </p>
 
 - As tutorial material
 - As personal studying and learning material
 
-<p>Contents in this repository are protected by MIT License. Contents are not to be redistributed commercially without the consent of contributors.
+<p>Contents in this repository are protected by MIT License. Additionally, contents are not to be redistributed commercially without the consent of contributors.
 
 ## How to get the material
 
@@ -58,4 +58,4 @@
 
 ## Join Us
 
-<p>Everyone who has a reasonable level of knowledge in any HKDSE subject and is willing to learn basic LaTeX is welcome to join the co-development of this project. If you wish to collaborate with us, please either contact an active collaborator or send an email to <code>fivetriplestar@gmail.com</code> with relevent contact information. </p>
+<p>Everyone who has a reasonable level of knowledge in any HKDSE subject and is willing to learn basic LaTeX is welcome to join the joint development of this project. If you wish to collaborate with us, please either contact an active collaborator or send an email to <code>fivetriplestar@gmail.com</code> with relevent contact information. </p>
