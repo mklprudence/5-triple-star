@@ -1,0 +1,62 @@
+We begin the investigation of the chain rule by some elementary observations.
+There was an exercise in a previous section asking for the derivative of the reciprocal of a function from first principle.
+If you attempted that one,
+\footnote{If you did not, feel free to deduce this from the quotient rule.}
+you would remember that we have
+$$\frac{\mathrm d}{\mathrm dx}\frac{1}{f(x)}=-\frac{f^\prime(x)}{f(x)^2}$$
+Now, there is something strange here: if we substitute $y=f(x)$, the formula is essentially
+$$-\frac{1}{y^2}\frac{\mathrm dy}{\mathrm dx}$$
+Let the derivative of $y$ alone first, the rest is not something that we see every day. The only recent case where we get acquainted with something looks like $-1/y^2$ is when evaluating
+$$\frac{\mathrm d}{\mathrm dy}\frac{1}{y}=-\frac{1}{y^2}$$
+But, hey, $1/y$ is exactly $1/f(x)$, the function that we intended to differentiate at first!
+There is something fishy here, is it not?\\
+If we write $g=1/f$, then we arrive at
+$$\frac{\mathrm dg}{\mathrm dx}=\frac{\mathrm dg}{\mathrm dy}\frac{\mathrm dy}{\mathrm dx}$$
+This is a nice formula indeed. The ``$\mathrm dy$''s ``cancelled out'' each other and greatly simplifies our evaluation.
+Clearly, we cannot \textit{really} cancel out the $\mathrm d$-stuff, because they are not real things.
+\footnote{Well, not yet. In some contexts, we have similar things like that, called the \textit{differential forms}, but the theory of that would not be relevant to you if you have not gone through a minimum of two years' study in Maths Major.}
+However, that does not mean that we cannot prove it.\\
+Now suppose that $g(x)=f(s(x))$, where $f$ and $s$ are both differentiable.
+Then, from first principle.
+\begin{align*}
+    &\lim_{h\to0}\frac{g(x+h)-g(x)}{h}\\
+    =&\lim_{h\to0}\frac{f(s(x+h))-f(s(x))}{h}\\
+    =&\lim_{h\to0}\frac{f(s(x+h))-f(s(x))}{s(x+h)-s(x)}\frac{s(x+h)-s(x)}{h}
+\end{align*}
+Since $s$ is differentiable, when $h\to0$, $s(x+h)-s(x)\to0$ (otherwise its derivative would not exist). Hence
+$$\lim_{h\to0}\frac{f(s(x+h))-f(s(x))}{s(x+h)-s(x)}=f^\prime(s(x))$$
+So
+$$\lim_{h\to0}\frac{g(x+h)-g(x)}{h}=f^\prime(s(x))s^\prime(x)$$
+This means that $g$ is differentiable and that its derivative is $f^\prime(s(x))s^\prime(x)$.
+One may check that this exactly what we have claimed.
+Conventionally, we denote $g$ by $f\circ s$
+\begin{theorem}
+    If $f$ and $g$ are both differentiable, and the domain of $f$ contains the image of $g$ (just to ensure that $f(g(x))$ is always well-defined), then $f\circ g$ is differentible and its derivative is
+    $$f^\prime(g(x))g^\prime(x)$$
+    or
+    $$\frac{\mathrm d(f\circ g)}{\mathrm dx}=\frac{\mathrm d(f\circ g)}{\mathrm dg}\frac{\mathrm dg}{\mathrm dx}$$
+\end{theorem}
+To avoid some common confusion, the author recommend the first form of the chain rule for all candidates.\\
+We now can do some interesting stuff with the chain rule.
+A common application of it would be
+\begin{example}
+    Let $y=e^{x^2+2x}$. By the chain rule (setting $f(x)=e^x$ and $g(x)=x^2+2x$), we have
+    $$\frac{\mathrm dy}{\mathrm dx}=f^\prime(g(x))g^\prime(x)=e^{x^2+2x}(2x+2)$$
+\end{example}
+But not just that.
+Using the chain rule, we can also find the derivative of any rational power.
+\begin{theorem}
+    Let $f(x)=x^r$ where $r=p/q$ for some integers $p,q$, then $f^\prime(x)=rx^{r-1}$.
+\end{theorem}
+\begin{proof}
+    Let $h(x)=x^q$.
+    So
+    $$px^{p-1}=(h\circ f)^\prime=h^\prime(f(x))f^\prime(x)=qx^{r(q-1)}f^\prime(x)$$
+    Rearrange to give
+    $$f^\prime(x)=\frac{p}{q}x^{p-1-(p/q)(q-1)}=\frac{p}{q}x^{p/q-1}=rx^{r-1}$$
+    As desired.
+\end{proof}
+Note that in the above arguement we implicitly assumed the differentiability of $f$, which, though obvious, would make a nice exercise.
+A warm reminder is that you are making fool of yourself
+\footnote{It works, but if you do that, why bother the nice proof above?}
+if you directly attempt the first principle on $f$.
