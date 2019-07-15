@@ -1,0 +1,48 @@
+It is really not a very hard thing to believe, but I am not sure why people are buffled by it in their first sight of the idea.
+Therefore, I am going to say it here in case some people are confused by it:
+If two functions are identical, so are their derivatives.
+\begin{theorem}
+    If $f=g$, then $f^\prime=g^\prime$.
+\end{theorem}
+\begin{proof}
+    Really? You need me to prove it?
+\end{proof}
+If it is really so trivial, why do we state it?
+Because it can help a great deal when evaluating derivatives, dealing with differential equations, and so much more.
+\begin{example}
+    We have looked into the derivative of any real power, but how about the power of itself?
+    If $f(x)=x^x$, how do we find $x^x$?
+    Here is where implicit differentiation comes in.
+    \begin{align*}
+        y=&x^x\\
+        \ln y=&x\ln x\\
+        \frac{1}{y}\frac{\mathrm dy}{\mathrm dx}=&\ln x+1\\
+        \frac{\mathrm dy}{\mathrm dx}=&y(\ln x+1)\\
+        =&x^x\ln x+x^x
+    \end{align*}
+\end{example}
+Please look into the above example thoroughly and get familiar with this general idea:
+We try to simplify the aimed function $f$ by another (simple) function $g$, which is the natual logarithm in this case.
+We want to do it in such a way that we know how to differentiate both $g(f(x))$ and $g(x)$.
+Assuming that we can, indeed, find such a function $g$, then we do the above procedure over again.
+\begin{align*}
+    y=&f(x)\\
+    g(y)=&g(f(x))\\
+    g^\prime(y)\frac{\mathrm dy}{\mathrm dx}=&(g\circ f)^\prime(x)\\
+    \frac{\mathrm dy}{\mathrm dx}=&\frac{(g\circ f)^\prime(x)}{g^\prime(y)}\\
+    =&\frac{(g\circ f)^\prime(x)}{g^\prime(f(x))}
+\end{align*}
+Of course, no one will be asking you to memorize the last formula, but you must get a gist of the idea.
+Now here is another example.
+\begin{example}
+    We take $f(x)=\arcsin(x)=\sin^{-1}(x)$ where $f:[0,1]\to[0,\pi/2]$.
+    Following the above idea, we (secretly) take $g(x)=\sin(x)$, and this gives us
+    \begin{align}
+        y=&f(x)=\arcsin(x)\\
+        \sin y=&x\\
+        \cos y\frac{\mathrm dy}{\mathrm dx}=&1\\
+        \frac{\mathrm dy}{\mathrm dx}=&\frac{1}{\cos(\arcsin x)}\\
+        =&\frac{1}{\sqrt{1-x^2}}
+    \end{align}
+    The last equality is derived from the identity $\sin^2+\cos^2=1$.
+\end{example}
