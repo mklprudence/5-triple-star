@@ -17,6 +17,8 @@
 
 <p>Normally, if a set of notes has been completed, we will upload a compiled (<code>pdf</code>) version for download.</p>
 
+<p>Links to currently released material can be found [on our website](fivetriplestar.github.io)</p>
+
 <p>If you want the most updated (which might or might not have been released) version of the notes of mock papers in the <code>5-triple-star</code> project, please follow these instructions depends on your situation.</p>
 
 <p>First, download the directory which sets of material you will need. For example, if you need the differentiation set of notes in the M2 syllabus, it shall be <code>5-triple-star/resources/Mathematics EP M2/Notes/Differentiation</code>. This can be done in several ways.</p>
