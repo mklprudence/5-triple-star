@@ -1,6 +1,6 @@
-# Repository Structure Template for Contributors
+# How to Contribute to the Project
 
-## Structure
+## Repository Structure Template for Contributors
 
 <p>All directories and files in this repository should be arranged in the following suggested format for consistency. Users should get familiarized with the structure listed below to find files easily. </p>
 
@@ -10,6 +10,7 @@
             |-- README.md (record progress)
             |-- mock1/
                 |-- main.tex
+                |-- fts_[Subject]_mock.cls
                 |-- illustration/ (Optional)
                     |-- somefigure.pdf
                     ...
@@ -39,9 +40,28 @@
 
 ### Setup
 
+#### Download
+Several installiation methods work depending on your case.
+
+###### Linux
+<p>Use your distribution's package manager to install git. For example, Ubuntu users can use <code>apt-get install git</code>.</p>
+
+###### Native Windows Environment
 <p>Install <strong>Git</strong> to your PC from <a href="https://git-scm.com/downloads">this link</a>.</p>
 
-<p>Open Git Bash and navigate to the directory you want.<br>For example, if your want the repository to be at <code>C:/Users/mklprudence/5-triple-star/...</code>, use command <code>cd C:/Users/mklprudence</code></p>
+###### MSYS2 on Windows
+<p>Install MSYS2 from <a href=https://www.msys2.org/>here</a>. After all packages have been updated by casting <code>pacman -Syuu</code> over again, input <code>pacman -S git</code>.</p>
+
+<p>Note that in this way you can also get a full <code>POSIX</code> environment on Windows, therefore it is expected to take up more disk space.</p>
+
+###### Macintosh
+<p>Most likely your system has already installed <code>git</code>. Try running <code>git --version</code> to find out. If there is no <code>git</code> installed, <a href=http://sourceforge.net/projects/git-osx-installer/>install it from here</a>.</p>
+
+#### Initialization
+
+<p>Open your favourate terminal (cmd/PowerShell/Git Bash/Msys2 Bash/...) and navigate to the directory you want.</p>
+
+<p>For example, if your want the repository to be at <code>C:/Users/mklprudence/5-triple-star/...</code>, use command <code>cd C:/Users/mklprudence</code></p>
 
 <p>Clone the repository to establish a local repository copy by running command <code>git clone https://github.com/mklprudence/5-triple-star.git</code></p>
 
