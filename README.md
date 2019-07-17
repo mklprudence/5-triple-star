@@ -26,7 +26,7 @@
 - Clone (or download) the entire repository and navigate to the respective directory
 - Download all files and folders in that directory
 
-<p>If you have any TeX distribution installed in your computer, just compile the <code>main.pdf</code>.</p>
+<p>If you have any TeX distribution installed in your computer, just compile by using <code>latexmk</code> (requires <code>perl</code>) or <code>pdflatex main.tex -interaction=nonstopmode</code>.</p>
 
 <p>Otherwise, you can go to <a href=https://www.overleaf.com/>ShareLaTeX/Overleaf</a>, upload the files and use the online compilation feature there.</p>
 
