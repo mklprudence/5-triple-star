@@ -1,13 +1,22 @@
 \newif\ifcompilesupp
+\newif\ifbeta
+
 \compilesupptrue
 % comment the above line if you don't want the supplementary information subsections
+\betatrue
+% uncomment the above line if it is a beta release
 
 \documentclass{fts_m2}
 
-\ifcompilesupp
-\title{Differentiation}
+\ifbeta
+    \compilesupptrue
+    \title{Differentiation (beta)}
 \else
-\title{Differentiation (no-supp)}
+    \ifcompilesupp
+    \title{Differentiation}
+    \else
+    \title{Differentiation (no-supp)}
+    \fi
 \fi
 
 \begin{document}
@@ -66,6 +75,6 @@
     \section{Implicit Differentiation}
     \input{ss8/content.tex}
 
-    %TODO
-    %\section{Higher derivatives}
+    \section{Higher derivatives}
+    \input{ss9/content.tex}
 \end{document}
