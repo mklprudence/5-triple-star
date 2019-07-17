@@ -41,13 +41,13 @@
 ### Setup
 
 #### Download
-Several installiation methods work depending on your case.
+<p>Several installiation methods work depending on your case.</p>
 
 ###### Linux
 <p>Use your distribution's package manager to install git. For example, Ubuntu users can use <code>apt-get install git</code>.</p>
 
 ###### Native Windows Environment
-<p>Install <strong>Git</strong> to your PC from <a href="https://git-scm.com/downloads">this link</a>.</p>
+<p>Install <code>git</code> to your PC from <a href="https://git-scm.com/downloads">this link</a>.</p>
 
 ###### MSYS2 on Windows
 <p>Install MSYS2 from <a href=https://www.msys2.org/>here</a>. After all packages have been updated by casting <code>pacman -Syuu</code> over again, input <code>pacman -S git</code>.</p>
@@ -71,7 +71,7 @@ Several installiation methods work depending on your case.
 
 <p>It is important for you to work on an updated copy both for your own work's sake and for preventing merge conflict. Your current local repository is only a "snapshot" of the online repository at the point of your last git push or git pull. </p>
 
-<p>Open Git Bash directly in the 5-triple-star directory<br>In Windows, open the directory in File Explorer, right-click any empty space and open Git Bash<br>Or you can Open Git Bash and navigate to the suitable directory by running command <code>cd path/to/dir</code></p>
+<p>Open your favourite terminal directly in the 5-triple-star directory.<br>In Windows, open the directory in File Explorer, right-click any empty space and open <code>cmd/PowerShell/...</code>.<br>Or you can open the terminal and navigate to the suitable directory by running command <code>cd path/to/dir</code>.</p>
 
 <p>Run command <code>git pull origin master</code> to pull updated data from the online repository. You maybe prompted to login Github. <br>See section <strong>Caching Password</strong> to avoid having to login every time you git push or pull. </p>
 
@@ -83,9 +83,13 @@ Several installiation methods work depending on your case.
 
 <p>After conducting some changes or adding some files, it is important to group those changes and notify the Git system that there are changes, in the action called <strong>Committing</strong>. </p>
 
-<p>First add the changed file that needed to commit by <code>git add</code>. To add ALL changed file to the commit, use <code>git add .</code>. To add only specific file, use <code>git add relative-path-to-file</code>. </p>
+<p>First add the changed file that needed to commit by <code>git add</code>. To add ALL changed file in your working directory to the commit, use <code>git add .</code>. To add only specific file or folder, use <code>git add relative-path-to-file</code> for files and <code>git add relative-path-to-folder/*</code> for folders. </p>
 
-<p>Then conduct the commit by using <code>git commit -m "message-for-the-commit"</code>(with the quotation marks). 
+<p>Then conduct the commit by using <code>git commit -m "message-for-the-commit"</code>(with the quotation marks).</p>
+
+<p>If you simply want to commit all the changes, staged or not, in one run, use <code>git commit -a -m "message-for-the-commit"</code></p>
+
+<p>It is recommended that you do not forget to add the <code>-m "message-for-the-commit"</code> part, otherwise, unless you have configured it, <code>vim</code> will be opened for you to input the commit message, which is painful if you have no existing experience of using it.</p>
 
 #### Pushing to remote repository
 
