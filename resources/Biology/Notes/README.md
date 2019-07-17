@@ -1,5 +1,7 @@
 # Biology - Notes
 
-## Currently Under-construction
+## Under-construction
 
-## Currently Finished/Drafted
+## Drafted (beta release)
+
+## Released
