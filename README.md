@@ -4,7 +4,7 @@
 
 <p><code>5-triple-star</code> is a repository project initiated by La Salle College Class of 2019 students, as an effort to create a centralized and organised location for DSE learning and studying material. </p>
 
-<p>Users of <code>5-triple-star</code> material can refer to the structure layout in <a href="https://github.com/mklprudence/5-triple-star/blob/master/STRUCTURE.md">STRUCTURE.md</a> to find the files required. </p>
+<p>Users of <code>5-triple-star</code> material can refer to the structure layout in <a href="https://github.com/mklprudence/5-triple-star/blob/master/CONTRIBUTING.md">CONTRIBUTING.md</a> to find the files required. </p>
 
 <p>Contents in this repository can be utilized in various form, including but not limited to the following : </p>
 
@@ -17,7 +17,7 @@
 
 <p>Normally, if a set of notes has been completed, we will upload a compiled (<code>pdf</code>) version for download.</p>
 
-<p>Links to currently released material can be found [on our website](fivetriplestar.github.io)</p>
+<p>Links to currently released material can be found on <a href=https://fivetriplestar.github.io/>our website</a></p>
 
 <p>If you want the most updated (which might or might not have been released) version of the notes of mock papers in the <code>5-triple-star</code> project, please follow these instructions depends on your situation.</p>
 
