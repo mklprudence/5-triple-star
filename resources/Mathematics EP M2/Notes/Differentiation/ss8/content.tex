@@ -46,3 +46,21 @@ Now here is another example.
     \end{align*}
     The last equality is derived from the identity $\sin^2+\cos^2=1$.
 \end{example}
+One another usage of implicit differentiation, in its name, is quite self-containing: to differentiate implicit curves.\\
+As you may expect, we do want to know the slope of tangent to some point on a curve even if it cannot be described by a function.
+The circle being a noticable example.
+\begin{example}
+    We take the unit circle as the implicit curve
+    $$x^2+y^2=1$$
+    If we want to find its slope at a point $(x,y)$ on it, we can do this:
+    \begin{align*}
+        x^2+y^2=&1\\
+        2x+2y\frac{\mathrm dy}{\mathrm dx}=&0\\
+        \frac{\mathrm dy}{\mathrm dx}=&-\frac{x}{y}
+    \end{align*}
+    So, for example, if we want the slope of tangent at $(0.6,0.8)$ (please verify that this point is on the curve), we plug it in and find that it is $-0.75$.
+    You may wish to verify that this is true.
+\end{example}
+Same way.
+Same trick.
+We can now attack implicit functions as well with our brand-new weapon -- Calculus!
