@@ -36,6 +36,36 @@
 
 <p>NB Please do NOT name the illustration files as <code>main.pdf</code>, since that is agreed to be the name for the temporary builds of the documents and will be ignored by git due to our current <code>.gitignore</code> settings. Also, try not to add any binary files that are subject to changes (since they will be stored in the repository forever).</p>
 
+## LaTeX
+
+### Setup
+
+#### Download
+<p>The easiest way to get TeX is to <a heref=http://tug.org/texlive/acquire.html>install TeXLive</a>. This works on all platforms and should provide all you need by default.</p>
+
+<p>If you do not want to install all packages (occupying some gigabytes of disk space) from CTAN defaulted by TeXLive, you can try the <a href=https://miktex.org/>MiKTeX distribution</a>. It will only install the basic facilities to run TeX, and required packages will be installed on-the-fly. However, due to this quite unique feature, compilation speed is compromised to a certain degree. MiKTeX is also cross-platform now.</p>
+
+<p>On Macintosh, a distribution called <a href=https://tug.org/mactex/>MacTeX</a> is also available. It is very much like TeXLive, but its interface is optimized for Macintosh system.</p>
+
+<p>Some other distributions are also out there. But these are the most widely-used ones.</p>
+
+#### Usage
+<p>TeX is a markup language. You write <code>tex</code> files and compile them to binary formats like <code>dvi</code> or <code>pdf</code>.</p>
+
+<p>LaTeX is a set of macros equipping on plain TeX. This includes the most important <code>\documentclass</code> and <code>\usepackage</code>， which requires <code>cls</code> and <code>sty</code> files respectively. You may use the existing ones or come up with your own. If you choose the latter, it is recommended that you sync those files through all similar stuff in the same subject. E.g. All M2 notes should use the same <code>cls</code> file, <code>fts_ms.cls</code>.</p>
+
+<p>All the notes in this project are supposed to be written in LaTeX. If you want detailed material to learn it, you may consult <a href=https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes>the Overleaf/ShareLaTeX tutorial</a> to get a grip of the idea. If you just want to clarify a few usage problems, you may feel free to search/ask them in <a href=https://www.stackoverflow.com>Stack Overflow</a>.</p>
+
+#### Compile
+
+<p>If you use an LaTeX IDE, you will of course be given compile/view shortcut. Most text editors (like Vim, Emacs, VS Code, etc.) also have plugins that support similar functions.</p>
+
+<p>However, if you insist on managing the command line, there are generally two ways (both require a functioning LaTeX distribution, of course).</p>
+
+<p>Assuming that your main tex file is named <code>main.tex</code>. The play-from-scratch way is to simply use <code>pdflatex main.tex -interaction=nonstopmode</code>. The last argument ensures a similar behaviour of LaTeX compiler to most modern language compilers.</p>
+
+<p>The author (@fivetriplestar) personally recommend using <code>latexmk</code>. It is a <code>perl</code> script which most likely come with most <code>perl</code> distributions. You only need to type <code>latexmk</code> in the working directory and it will take care for the rest.</p>
+
 ## Git Workflow
 
 ### Setup
