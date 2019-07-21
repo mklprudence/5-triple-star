@@ -57,10 +57,39 @@ $$f^\prime(x)=\lim_{h\to0}\frac{f(x+h)-f(x)}{h}=-\sin(x)$$
 \end{align*}
 Therefore,
 $$f^\prime(x)=\lim_{h\to0}\frac{g(x+h)-g(x)}{h}=cf^\prime(x)$$
-%\subsection{Differentiating Sums, Products and Quotients}
-%\subsection{Derivatives of Integral Powers}
-%\subsection{The Chain Rule and Derivative of Rational Powers}
-%\subsection{Derivatives of Logarithm and Irrational Powers}
+\subsection{Section 3}
+1. 
+$$\frac{\mathrm d}{\mathrm dx}\frac{\sqrt{x}}{e^x}=\frac{\frac{1}{2\sqrt{x}}e^x-\sqrt{x}e^x}{e^{2x}}=\frac{1-2x}{2\sqrt{x}e^x}$$
+2. (a)
+$$\frac{\mathrm d}{\mathrm dx}x^3=(1)x^2+x(2x)=3x^2$$
+$$\frac{\mathrm d}{\mathrm dx}x^4=(1)x^3+x(3x^2)=4x^3$$
+(b) Let $P(n)$ be the proposition. When $n=1$, $\mathrm{L.H.S.}=1=\mathrm{R.H.S.}$, so $P(1)$ is true. Now assume that $P(k)$ is true for some positive integer $k$, then when $n=k+1$,
+\begin{align*}
+    \mathrm{L.H.S.}
+    =&\frac{\mathrm d}{\mathrm dx}x^{k+1}\\
+    =&\left(\frac{\mathrm d}{\mathrm dx}x\right)x^k+x\left(\frac{\mathrm d}{\mathrm dx}x^k\right)\\
+    =&x^k+x(kx^{k-1})\\
+    =&(k+1)x^k=\mathrm{R.H.S.}
+\end{align*}
+So $P(k+1)$ is true. By the principle of mathematical induction, $P(n)$ is true for all positive integer $n$.\\
+3. (a)
+\begin{align*}
+    \lim_{h\to0}\frac{\frac{1}{f(x+h)}-\frac{1}{f(x)}}{h}
+    =&-\lim_{h\to0}\frac{1}{f(x)f(x+h)}\frac{f(x+h)-f(x)}{h}\\
+    =&-\frac{f^\prime(x)}{f(x)^2}
+\end{align*}
+(b)
+\begin{align*}
+    \frac{\mathrm d}{\mathrm dx}\frac{f(x)}{g(x)}
+    =&\frac{\mathrm d}{\mathrm dx}f(x)\frac{1}{g(x)}\\
+    =&\left(\frac{\mathrm d}{\mathrm dx}f(x)\right)\frac{1}{g(x)}+f(x)\left(\frac{\mathrm d}{\mathrm dx}\frac{1}{g(x)}\right)\\
+    =&\frac{f^\prime(x)}{g(x)}-\frac{f(x)g^\prime(x)}{g(x)^2}\\
+    =&\frac{f^\prime(x)g(x)-f(x)g^\prime(x)}{g(x)^2}
+\end{align*}
+
+\subsection{Section 4}
+\subsection{Section 5}
+\subsection{Section 6}
 %\subsection{Derivatives of trigonometric functions}
 %\subsection{Implicit Differentiation}
 %\subsection{Higher derivatives}
