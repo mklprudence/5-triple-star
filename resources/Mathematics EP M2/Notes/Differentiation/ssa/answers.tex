@@ -90,6 +90,66 @@ So $P(k+1)$ is true. By the principle of mathematical induction, $P(n)$ is true 
 \subsection{Section 4}
 \subsection{Section 5}
 \subsection{Section 6}
-%\subsection{Derivatives of trigonometric functions}
+\subsection{Section 7}
+1. (3)
+$$\frac{\mathrm d}{\mathrm dx}\tan(x)=\frac{\mathrm d}{\mathrm dx}\frac{\sin(x)}{\cos(x)}=\frac{\sin^2(x)+\cos^2(x)}{\cos^2(x)}=\frac{1}{\cos^2(x)}=\sec^2(x)$$
+(4)
+$$\frac{\mathrm d}{\mathrm dx}\sec(x)=\frac{\mathrm d}{\mathrm dx}\frac{1}{\cos(x)}=-\frac{1}{\cos^2(x)}(-\sin(x))=\sec(x)\tan(x)$$
+$$\frac{\mathrm d}{\mathrm dx}\cot(x)=\frac{\mathrm d}{\mathrm dx}\frac{\cos(x)}{\sin(x)}=\frac{-\sin^2(x)-\cos^2(x)}{\sin^2(x)}=-\frac{1}{\sin^2(x)}=-\csc^2(x)$$
+$$\frac{\mathrm d}{\mathrm dx}\csc(x)=\frac{\mathrm d}{\mathrm dx}\frac{1}{\sin(x)}=-\frac{1}{\sin^2(x)}(\cos(x))=-\csc(x)\cot(x)$$
+2. (3)
+\begin{align*}
+    \lim_{h\to0}\frac{\tan(x+h)-\tan(x)}{h}
+    =&\lim_{h\to0}\frac{\sin(x+h)\cos(x)-\cos(x+h)\sin(x)}{h\cos(x)\cos(x+h)}\\
+    =&\lim_{h\to0}\frac{\sin(h)}{h}\frac{1}{\cos(x)\cos(x+h)}\\
+    =&\sec^2(x)
+\end{align*}
+Therefore,
+$$\frac{\mathrm d\tan(x)}{\mathrm dx}=\sec^2(x)$$
+(4)
+\begin{align*}
+    \lim_{h\to0}\frac{\sec(x+h)-\sec(x)}{h}
+    =&\lim_{h\to0}\frac{\cos(x)-\cos(x+h)}{h\cos(x)\cos(x+h)}\\
+    =&\lim_{h\to0}\frac{-2\sin(x+h/2)\sin(-h/2)}{h\cos(x)\cos(x+h)}\\
+    =&\lim_{h\to0}\frac{\sin(x+h/2)}{\cos(x)\cos(x+h)}\frac{\sin(h/2)}{h/2}\\
+    =&\frac{\sin(x)}{\cos^2(x)}\\
+    =&\sec(x)\tan(x)
+\end{align*}
+Therefore,
+$$\frac{\mathrm d\sec(x)}{\mathrm dx}=\sec(x)\tan(x)$$
+(5)
+\begin{align*}
+    \lim_{h\to0}\frac{\cot(x+h)-\cot(x)}{h}
+    =&\lim_{h\to0}\frac{\sin(x)\cos(x+h)-\cos(x)\sin(x+h)}{h\sin(x)\sin(x+h)}\\
+    =&\lim_{h\to0}-\frac{\sin(h)}{h}\frac{1}{\sin(x)\sin(x+h)}\\
+    =&-\csc^2(x)
+\end{align*}
+Therefore,
+$$\frac{\mathrm d\cot(x)}{\mathrm dx}=-\csc^2(x)$$
+(6)
+\begin{align*}
+    \lim_{h\to0}\frac{\csc(x+h)-\csc(x)}{h}
+    =&\lim_{h\to0}\frac{\sin(x)-\sin(x+h)}{h\sin(x)\sin(x+h)}\\
+    =&\lim_{h\to0}\frac{2\cos(x+h/2)\sin(-h/2)}{h\sin(x)\sin(x+h)}\\
+    =&\lim_{h\to0}-\frac{\cos(x+h/2)}{\sin(x)\sin(x+h)}\frac{\sin(h/2)}{h/2}\\
+    =&-\frac{\cos(x)}{\sin^2(x)}\\
+    =&-\csc(x)\cot(x)
+\end{align*}
+Therefore,
+$$\frac{\mathrm d\csc(x)}{\mathrm dx}=-\csc(x)\cot(x)$$
+3.
+$$f^\prime(x)=\cos(x^2\cos(e^x))(2x\cos(e^x)-x^2\sin(e^x)e^x)$$
+\subsection{Section 8}
+1. We have $x^x=e^{x\ln x}$, so
+$$\frac{\mathrm dx^x}{\mathrm dx}=\frac{\mathrm de^{x\ln x}}{\mathrm dx}=e^{x\ln x}(\ln x+x\frac{1}{x})=x^x(\ln x+1)$$
+2.
+\begin{align*}
+    ye^y=&\ln x\\
+    (ye^y+e^y)\frac{\mathrm dy}{\mathrm dx}=&\frac{1}{x}\\
+    \frac{\mathrm dy}{\mathrm dx}=&\frac{1}{xye^y+xe^y}
+\end{align*}
+So when $x=1,y=0$, we have
+$$\left.\frac{\mathrm dy}{\mathrm dx}\right|_{(1,0)}=1$$
+\subsection{Section 9}
 %\subsection{Implicit Differentiation}
 %\subsection{Higher derivatives}
