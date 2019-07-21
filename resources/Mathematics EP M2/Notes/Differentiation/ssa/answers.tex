@@ -1,0 +1,66 @@
+\subsection{Section 1}
+1. Consider the bahaviour of the function $f(x)=|x|$ at $x=0$.
+
+\subsection{Section 2}
+1.
+\begin{align*}
+    \lim_{h\to0}\frac{\frac{1}{x+h}-\frac{1}{x}}{h}
+    =&\lim_{h\to0}\frac{-h}{hx(x+h)}\\
+    =&\lim_{h\to0}-\frac{1}{x(x+h)}\\
+    =&-\frac{1}{x^2}
+\end{align*}
+Therefore,
+$$f^\prime(x)=\lim_{h\to0}\frac{f(x+h)-f(x)}{h}=-\frac{1}{x^2}$$
+2.
+\begin{align*}
+    \lim_{h\to0}\frac{\sqrt{x+h}-\sqrt{x}}{h}
+    =&\lim_{h\to0}\frac{h}{h\sqrt{x}+\sqrt{x+h}}\\
+    =&\lim_{h\to0}\frac{1}{\sqrt{x}+\sqrt{x+h}}\\
+    =&\frac{1}{2\sqrt{x}}
+\end{align*}
+Therefore,
+$$f^\prime(x)=\lim_{h\to0}\frac{f(x+h)-f(x)}{h}=\frac{1}{2\sqrt{x}}$$
+3.
+\begin{align*}
+    \lim_{h\to0}\frac{e^{ax+ah}-e^{ax}}{h}
+    =&\lim_{h\to0}ae^{ax}\frac{e^{ah}-1}{ah}\\
+    =&(ae^{ax})(1)\\
+    =&ae^{ax}
+\end{align*}
+Therefore,
+$$f^\prime(x)=\lim_{h\to0}\frac{f(x+h)-f(x)}{h}=ae^{ax}$$
+4. (a)
+\begin{align*}
+    \lim_{h\to0}\frac{\sin(x+h)-\sin(x)}{h}
+    =&\lim_{h\to0}\frac{2\cos(x+h/2)\sin(h/2)}{h}\\
+    =&\lim_{h\to0}\cos(x+h/2)\frac{\sin(h/2)}{h/2}\\
+    =&\cos(x)
+\end{align*}
+Therefore,
+$$f^\prime(x)=\lim_{h\to0}\frac{f(x+h)-f(x)}{h}=\cos(x)$$
+(b)
+\begin{align*}
+    \lim_{h\to0}\frac{\cos(x+h)-\cos(x)}{h}
+    =&-\lim_{h\to0}\frac{\sin(x-\pi/2+h)-\sin(x-\pi/2)}{h}\\
+    =&\left.\frac{\mathrm d\sin(z)}{\mathrm dz}\right|_{z=x-\pi/2}\\
+    =&-\cos(x-\pi/2)\\
+    =&-\sin(x)
+\end{align*}
+Therefore,
+$$f^\prime(x)=\lim_{h\to0}\frac{f(x+h)-f(x)}{h}=-\sin(x)$$
+5.
+\begin{align*}
+    \lim_{h\to0}\frac{g(x+h)-g(x)}{h}
+    =&\lim_{h\to0}\frac{cf(x+h)-cf(x)}{h}\\
+    =&c\lim_{h\to0}\frac{f(x+h)-f(x)}{h}\\
+    =&cf^\prime(x)
+\end{align*}
+Therefore,
+$$f^\prime(x)=\lim_{h\to0}\frac{g(x+h)-g(x)}{h}=cf^\prime(x)$$
+%\subsection{Differentiating Sums, Products and Quotients}
+%\subsection{Derivatives of Integral Powers}
+%\subsection{The Chain Rule and Derivative of Rational Powers}
+%\subsection{Derivatives of Logarithm and Irrational Powers}
+%\subsection{Derivatives of trigonometric functions}
+%\subsection{Implicit Differentiation}
+%\subsection{Higher derivatives}
