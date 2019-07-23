@@ -88,8 +88,15 @@ So $P(k+1)$ is true. By the principle of mathematical induction, $P(n)$ is true 
 \end{align*}
 
 \subsection{Section 4}
+1. $x^9e^x+9x^8e^x$.\\
+2. $5x^4-1$.
+
 \subsection{Section 5}
+1. $\frac{e^{\sqrt{x}}}{2\sqrt{x}}$
+
 \subsection{Section 6}
+1. $ex^{e-1}-e^x$
+
 \subsection{Section 7}
 1. (3)
 $$\frac{\mathrm d}{\mathrm dx}\tan(x)=\frac{\mathrm d}{\mathrm dx}\frac{\sin(x)}{\cos(x)}=\frac{\sin^2(x)+\cos^2(x)}{\cos^2(x)}=\frac{1}{\cos^2(x)}=\sec^2(x)$$
@@ -141,6 +148,7 @@ Therefore,
 $$\frac{\mathrm d\csc(x)}{\mathrm dx}=-\csc(x)\cot(x)$$
 3.
 $$f^\prime(x)=\cos(x^2\cos(e^x))(2x\cos(e^x)-x^2\sin(e^x)e^x)$$
+
 \subsection{Section 8}
 1. We have $x^x=e^{x\ln x}$, so
 $$\frac{\mathrm dx^x}{\mathrm dx}=\frac{\mathrm de^{x\ln x}}{\mathrm dx}=e^{x\ln x}(\ln x+x\frac{1}{x})=x^x(\ln x+1)$$
@@ -152,6 +160,17 @@ $$\frac{\mathrm dx^x}{\mathrm dx}=\frac{\mathrm de^{x\ln x}}{\mathrm dx}=e^{x\ln
 \end{align*}
 So when $x=1,y=0$, we have
 $$\left.\frac{\mathrm dy}{\mathrm dx}\right|_{(1,0)}=1$$
+
 \subsection{Section 9}
-%\subsection{Implicit Differentiation}
-%\subsection{Higher derivatives}
+1. (a) When $f(x)=\sin(x)$,
+$$\mathrm{L.H.S.}=f^{\prime\prime}=\frac{\mathrm d}{\mathrm dx}\cos(x)=-\sin(x)=-f=\mathrm{R.H.S.}$$
+When $f(x)=\cos(x)$,
+$$\mathrm{L.H.S.}=f^{\prime\prime}=\frac{\mathrm d}{\mathrm dx}-\sin(x)=-\cos(x)=-f=\mathrm{R.H.S.}$$
+(b) When $f(x)=A\cos(x)+B\sin(x)$,
+\begin{align*}
+    \mathrm{L.H.S.}
+    =&f^{\prime\prime}\\
+    =&\frac{\mathrm d}{\mathrm dx}(-A\sin(x)+B\cos(x))\\
+    =&-A\cos(x)-B\sin(x)\\
+    =&-f=\mathrm{R.H.S.}
+\end{align*}
